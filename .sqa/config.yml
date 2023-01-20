@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-magnolia-dormouse.sh
-        container: qc.acc_whiny-amber-frise
+        - /usr/bin/env sh .sqa/script.trippy-mustard-orangutan.sh
+        container: qc.acc_bumpy-aqua-bongo
   QC.Doc:
     repos:
       github.com/lmingari/releases find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-champagne-serval.sh
-        container: qc.doc_whiny-taupe-orangutan
+        - /usr/bin/env sh .sqa/script.snazzy-cardinal-indri.sh
+        container: qc.doc_beady-vermilion-gerbil
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-ecru-magpie.sh
-        container: qc.doc_geeky-orange-uguisu
+        - /usr/bin/env sh .sqa/script.clammy-pumpkin-moose.sh
+        container: qc.doc_shaggy-asparagus-bee
       github.com/lmingari/releases markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-razzmatazz-clam.sh
-        container: qc.doc_sloppy-taupe-argentino
+        - /usr/bin/env sh .sqa/script.shabby-amethyst-axolotl.sh
+        container: qc.doc_goopy-mauve-coyote
   QC.Lic:
     repos:
       github.com/lmingari/releases licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-cinnamon-bird.sh
-        container: qc.lic_thirsty-amaranth-goat
+        - /usr/bin/env sh .sqa/script.crappy-carmine-koala.sh
+        container: qc.lic_smelly-heliotrope-capuchin
   QC.Sec:
     repos:
       github.com/lmingari/releases bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-sapphire-frigatebird.sh
-        container: qc.sec_goopy-sepia-seahorse
+        - /usr/bin/env sh .sqa/script.bumpy-russet-tortoise.sh
+        container: qc.sec_bluesy-indigo-centipede
   QC.Sty:
     repos:
       github.com/lmingari/releases flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-myrtle-bracke.sh
-        container: qc.sty_bumpy-violet-whippet
+        - /usr/bin/env sh .sqa/script.queasy-burgundy-birman.sh
+        container: qc.sty_hilly-magenta-rabbit
   QC.Ver:
     repos:
       github.com/lmingari/releases get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-beige-uakari.sh
-        container: qc.ver_blurry-flax-flamingo
+        - /usr/bin/env sh .sqa/script.skinny-buff-buffalo.sh
+        container: qc.ver_stuffy-apricot-sheepdog
 timeout: 5400
