@@ -1,0 +1,58 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.7
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/lmingari/releases:
+      branch: master
+      repo: https://github.com/lmingari/releases.git
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/lmingari/releases git:
+        commands:
+        - /usr/bin/env sh .sqa/script.wimpy-lemon-caiman.sh
+        container: qc.acc_droopy-plum-zorse
+  QC.Doc:
+    repos:
+      github.com/lmingari/releases find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.sloppy-azure-ragdoll.sh
+        container: qc.doc_gamy-alizarin-hound
+      github.com/lmingari/releases git:
+        commands:
+        - /usr/bin/env sh .sqa/script.sleazy-silver-foxhound.sh
+        container: qc.doc_pretty-mauve-tapir
+      github.com/lmingari/releases markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.lousy-sapphire-harrier.sh
+        container: qc.doc_shabby-grey-capybara
+  QC.Lic:
+    repos:
+      github.com/lmingari/releases licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.stuffy-amethyst-grouse.sh
+        container: qc.lic_skinny-fuchsia-mouse
+  QC.Sec:
+    repos:
+      github.com/lmingari/releases bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.paltry-chartreuse-tuatara.sh
+        container: qc.sec_cranky-aqua-hound
+  QC.Sty:
+    repos:
+      github.com/lmingari/releases flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.lousy-chartreuse-quail.sh
+        container: qc.sty_messy-russet-donkey
+  QC.Ver:
+    repos:
+      github.com/lmingari/releases get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.squeaky-mauve-bird.sh
+        container: qc.ver_tasty-azure-termite
+timeout: 5400
