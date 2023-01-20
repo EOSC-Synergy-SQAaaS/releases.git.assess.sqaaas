@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-mustard-orangutan.sh
-        container: qc.acc_bumpy-aqua-bongo
+        - /usr/bin/env sh .sqa/script.freaky-silver-terrier.sh
+        container: qc.acc_snappy-rose-lizard
   QC.Doc:
     repos:
       github.com/lmingari/releases find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-cardinal-indri.sh
-        container: qc.doc_beady-vermilion-gerbil
+        - /usr/bin/env sh .sqa/script.homey-xanthic-birman.sh
+        container: qc.doc_stealthy-corn-alligator
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-pumpkin-moose.sh
-        container: qc.doc_shaggy-asparagus-bee
+        - /usr/bin/env sh .sqa/script.lovely-lime-mayfly.sh
+        container: qc.doc_chummy-blue-monster
       github.com/lmingari/releases markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-amethyst-axolotl.sh
-        container: qc.doc_goopy-mauve-coyote
+        - /usr/bin/env sh .sqa/script.breezy-crimson-newt.sh
+        container: qc.doc_snoopy-tomato-termite
   QC.Lic:
     repos:
       github.com/lmingari/releases licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-carmine-koala.sh
-        container: qc.lic_smelly-heliotrope-capuchin
+        - /usr/bin/env sh .sqa/script.pretty-ochre-labradoodle.sh
+        container: qc.lic_slimy-seashell-markhor
   QC.Sec:
     repos:
       github.com/lmingari/releases bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-russet-tortoise.sh
-        container: qc.sec_bluesy-indigo-centipede
+        - /usr/bin/env sh .sqa/script.tacky-persimmon-dolphin.sh
+        container: qc.sec_geeky-wisteria-snail
   QC.Sty:
     repos:
       github.com/lmingari/releases flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-burgundy-birman.sh
-        container: qc.sty_hilly-magenta-rabbit
+        - /usr/bin/env sh .sqa/script.messy-goldenrod-mau.sh
+        container: qc.sty_lumpy-orchid-harrier
   QC.Ver:
     repos:
       github.com/lmingari/releases get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-buff-buffalo.sh
-        container: qc.ver_stuffy-apricot-sheepdog
+        - /usr/bin/env sh .sqa/script.woozy-ochre-wasp.sh
+        container: qc.ver_crappy-silver-dalmatian
 timeout: 5400
