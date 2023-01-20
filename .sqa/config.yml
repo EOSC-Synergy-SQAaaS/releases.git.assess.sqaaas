@@ -15,44 +15,50 @@ sqa_criteria:
     repos:
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-silver-terrier.sh
-        container: qc.acc_snappy-rose-lizard
+        - /usr/bin/env sh .sqa/script.snazzy-beige-fox.sh
+        container: qc.acc_trippy-russet-dachsbracke
   QC.Doc:
     repos:
       github.com/lmingari/releases find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-xanthic-birman.sh
-        container: qc.doc_stealthy-corn-alligator
+        - /usr/bin/env sh .sqa/script.freaky-cobalt-dunker.sh
+        container: qc.doc_freaky-bronze-wolf
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-lime-mayfly.sh
-        container: qc.doc_chummy-blue-monster
+        - /usr/bin/env sh .sqa/script.nippy-lemon-moorhen.sh
+        container: qc.doc_cozy-violet-dhole
       github.com/lmingari/releases markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-crimson-newt.sh
-        container: qc.doc_snoopy-tomato-termite
+        - /usr/bin/env sh .sqa/script.gummy-apricot-seal.sh
+        container: qc.doc_gimpy-yellow-tarantula
   QC.Lic:
     repos:
       github.com/lmingari/releases licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-ochre-labradoodle.sh
-        container: qc.lic_slimy-seashell-markhor
+        - /usr/bin/env sh .sqa/script.shaky-brown-iguana.sh
+        container: qc.lic_frumpy-dandelion-bison
+  QC.Met:
+    repos:
+      github.com/lmingari/releases cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.skinny-vermilion-oriole.sh
+        container: qc.met_woozy-teal-lobster
   QC.Sec:
     repos:
       github.com/lmingari/releases bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-persimmon-dolphin.sh
-        container: qc.sec_geeky-wisteria-snail
+        - /usr/bin/env sh .sqa/script.stuffy-harlequin-numbat.sh
+        container: qc.sec_lanky-cinnabar-setter
   QC.Sty:
     repos:
       github.com/lmingari/releases flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-goldenrod-mau.sh
-        container: qc.sty_lumpy-orchid-harrier
+        - /usr/bin/env sh .sqa/script.greasy-auburn-frog.sh
+        container: qc.sty_frumpy-razzmatazz-shark
   QC.Ver:
     repos:
       github.com/lmingari/releases get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-ochre-wasp.sh
-        container: qc.ver_crappy-silver-dalmatian
+        - /usr/bin/env sh .sqa/script.slimy-asparagus-dachshund.sh
+        container: qc.ver_fuzzy-corn-eagle
 timeout: 5400
