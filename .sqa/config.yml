@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-cerulean-tamarin.sh
-        container: qc.acc_fuzzy-celadon-goat
+        - /usr/bin/env sh .sqa/script.gloppy-cerulean-orangutan.sh
+        container: qc.acc_cozy-mauve-wallaby
   QC.Doc:
     repos:
       github.com/lmingari/releases find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-cerulean-booby.sh
-        container: qc.doc_stealthy-wheat-cattle
+        - /usr/bin/env sh .sqa/script.greasy-magnolia-dolphin.sh
+        container: qc.doc_randy-saffron-caterpillar
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-vermilion-cheetah.sh
-        container: qc.doc_blurry-sapphire-flamingo
+        - /usr/bin/env sh .sqa/script.beady-aquamarine-octopus.sh
+        container: qc.doc_whiny-aqua-woodpecker
       github.com/lmingari/releases markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-myrtle-discus.sh
-        container: qc.doc_scanty-jade-chinook
+        - /usr/bin/env sh .sqa/script.crappy-chartreuse-albatross.sh
+        container: qc.doc_wimpy-beige-mule
   QC.Lic:
     repos:
       github.com/lmingari/releases licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-silver-mole.sh
-        container: qc.lic_nippy-olivine-chinchilla
+        - /usr/bin/env sh .sqa/script.goopy-red-wasp.sh
+        container: qc.lic_slimy-zucchini-zorse
   QC.Sec:
     repos:
       github.com/lmingari/releases bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-burgundy-orangutan.sh
-        container: qc.sec_muggy-lemon-coati
+        - /usr/bin/env sh .sqa/script.skanky-green-crane.sh
+        container: qc.sec_messy-seashell-dhole
   QC.Sty:
     repos:
       github.com/lmingari/releases flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-linen-hyrax.sh
-        container: qc.sty_clammy-copper-mandrill
+        - /usr/bin/env sh .sqa/script.frumpy-saffron-centipede.sh
+        container: qc.sty_pasty-razzmatazz-vulture
   QC.Ver:
     repos:
       github.com/lmingari/releases get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-wheat-antelope.sh
-        container: qc.ver_bumpy-amber-tetra
+        - /usr/bin/env sh .sqa/script.greasy-blue-lobster.sh
+        container: qc.ver_slimy-ivory-collie
 timeout: 5400
