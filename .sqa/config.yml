@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-lemon-caiman.sh
-        container: qc.acc_droopy-plum-zorse
+        - /usr/bin/env sh .sqa/script.hazy-aquamarine-stoat.sh
+        container: qc.acc_shabby-ultramarine-dane
   QC.Doc:
     repos:
       github.com/lmingari/releases find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-azure-ragdoll.sh
-        container: qc.doc_gamy-alizarin-hound
+        - /usr/bin/env sh .sqa/script.skinny-carmine-shark.sh
+        container: qc.doc_skimpy-malachite-budgerigar
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-silver-foxhound.sh
-        container: qc.doc_pretty-mauve-tapir
+        - /usr/bin/env sh .sqa/script.smelly-jade-eel.sh
+        container: qc.doc_pretty-beige-barracuda
       github.com/lmingari/releases markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-sapphire-harrier.sh
-        container: qc.doc_shabby-grey-capybara
+        - /usr/bin/env sh .sqa/script.ugly-fuchsia-rottweiler.sh
+        container: qc.doc_nippy-smalt-owl
   QC.Lic:
     repos:
       github.com/lmingari/releases licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-amethyst-grouse.sh
-        container: qc.lic_skinny-fuchsia-mouse
+        - /usr/bin/env sh .sqa/script.sleepy-persimmon-orangutan.sh
+        container: qc.lic_queasy-aqua-starfish
   QC.Sec:
     repos:
       github.com/lmingari/releases bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-chartreuse-tuatara.sh
-        container: qc.sec_cranky-aqua-hound
+        - /usr/bin/env sh .sqa/script.sunny-turquoise-antelope.sh
+        container: qc.sec_greasy-zucchini-cockroach
   QC.Sty:
     repos:
       github.com/lmingari/releases flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-chartreuse-quail.sh
-        container: qc.sty_messy-russet-donkey
+        - /usr/bin/env sh .sqa/script.squirrely-magenta-bison.sh
+        container: qc.sty_skimpy-amethyst-mongrel
   QC.Ver:
     repos:
       github.com/lmingari/releases get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-mauve-bird.sh
-        container: qc.ver_tasty-azure-termite
+        - /usr/bin/env sh .sqa/script.messy-sangria-ragdoll.sh
+        container: qc.ver_skanky-pumpkin-iguana
 timeout: 5400
