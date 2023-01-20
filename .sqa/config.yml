@@ -15,44 +15,44 @@ sqa_criteria:
     repos:
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-auburn-falcon.sh
-        container: qc.acc_squirrely-wheat-peccary
+        - /usr/bin/env sh .sqa/script.skimpy-magnolia-dormouse.sh
+        container: qc.acc_whiny-amber-frise
   QC.Doc:
     repos:
       github.com/lmingari/releases find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-plum-ostrich.sh
-        container: qc.doc_hazy-sepia-mayfly
+        - /usr/bin/env sh .sqa/script.grumpy-champagne-serval.sh
+        container: qc.doc_whiny-taupe-orangutan
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-azure-frise.sh
-        container: qc.doc_dorky-orchid-kudu
+        - /usr/bin/env sh .sqa/script.cranky-ecru-magpie.sh
+        container: qc.doc_geeky-orange-uguisu
       github.com/lmingari/releases markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-eggplant-meerkat.sh
-        container: qc.doc_stuffy-linen-civet
+        - /usr/bin/env sh .sqa/script.tasty-razzmatazz-clam.sh
+        container: qc.doc_sloppy-taupe-argentino
   QC.Lic:
     repos:
       github.com/lmingari/releases licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-turquoise-gibbon.sh
-        container: qc.lic_slaphappy-coral-squirt
+        - /usr/bin/env sh .sqa/script.wiggy-cinnamon-bird.sh
+        container: qc.lic_thirsty-amaranth-goat
   QC.Sec:
     repos:
       github.com/lmingari/releases bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.pasty-emerald-dingo.sh
-        container: qc.sec_lousy-celadon-hare
+        - /usr/bin/env sh .sqa/script.leaky-sapphire-frigatebird.sh
+        container: qc.sec_goopy-sepia-seahorse
   QC.Sty:
     repos:
       github.com/lmingari/releases flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-mustard-tamarin.sh
-        container: qc.sty_snazzy-lemon-schnauzer
+        - /usr/bin/env sh .sqa/script.sleepy-myrtle-bracke.sh
+        container: qc.sty_bumpy-violet-whippet
   QC.Ver:
     repos:
       github.com/lmingari/releases get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-orchid-butterfly.sh
-        container: qc.ver_flaky-orchid-ladybird
+        - /usr/bin/env sh .sqa/script.craggy-beige-uakari.sh
+        container: qc.ver_blurry-flax-flamingo
 timeout: 5400
